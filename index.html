@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+<link rel="icon" href="https://www.pandanes.com.ar/wp-content/uploads/2020/06/cropped-favicon-32x32.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://www.pandanes.com.ar/wp-content/uploads/2020/06/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="icon" href="https://www.pandanes.com.ar/wp-content/uploads/2020/06/cropped-favicon-32x32.png" sizes="32x32">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>App</title>
+  <script src="./js/var.js" defer></script>
+  <script src="./js/func.js" defer></script>
+  <script src="./js/enginev5.js" defer></script>
+  <script src="./js/events.js" defer></script>
+</head>
+
+<body onload="inputCant.focus()">
+  <page id="wraper" class="no-print ">
+    <div id="foo" class="d-flex justify-content-center">
+      <div id="d-note" class="row margentop card">
+        <h3 class="d-flex justify-content-left">Delivery Note</h3>
+
+        <div class="selectorb2">
+          <div class="border-gray border-bottom border-top padding-lado">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
+              <label class="form-check-label" for="flexRadioDefault1">
+                B2C
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+              <label class="form-check-label" for="flexRadioDefault2">
+                B2B
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+          <table class="table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Cantidad</th>
+                <th onclick="sortTable(1)">Item</th>
+              </tr>
+            </thead>
+            <tcontent>
+            <tbody id="dnote">  
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+            </tbody>
+            <dfooter style="margin-left: 2px; font-weight: bold;">
+              <tr id="dfooter" style="margin-left: 2px; font-weight: bold;"><th></th></tr>
+            </dfooter>
+          </tcontent>
+            <tfooter>
+              <tr>
+                <th><input id="cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="cantidad"
+                    required /></th>
+                <th><select list="pansel" name="pansele" id="pansele" type="text" class="form-control"
+                    placeholder="variedad" aria-label="pansele" />
+                  <datalist id="pansel">
+                    <option value="" style="display:none" selected></option>
+                    <option value="semillas500">Semillas 500</option>
+                    <option value="rustico500">Rustico 500</option>
+                    <option value="clasico500">Clasico 500</option>
+                    <option value="mediterraneo500">Mediterráneo 500</option>
+                    <option value="maiz500">Maíz 500</option>
+                    <option value="muesli500">Muesli 500</option>
+                    <option value="bagel">Bagel</option>
+                    <option value="multimolde">Multicereal Molde 500</option>
+                    <option value="multibun">Multicereal Bun</option>
+                    <option value="bunpapamarket">Bun Papa Market</option>
+                    <option value="pizza">Pizza Blanca</option>
+                    <option value="ciabatta">Ciabatta</option>
+                    <option value="bunpapa12u">Bun Papa 12u</option>
+                    <option value="semillasMolde1kg">Semillas Molde 1Kg</option>
+                    <option value="rusticoMolde1kg">Rustico Molde 1Kg</option>
+                    <option value="clasicoMolde1kg">Clásico Molde 1Kg</option>
+                    <option value="briocheMolde">Brioche</option>
+                    <option value="trigo500">Trigo 500</option>
+                    <option value="rugbrod800">Rugbrod 800</option>
+                  </datalist>
+                  </select>
+                </th>
+              </tr>
+            </tfooter>
+          </table>
+
+        </div>
+        <div class="row "><button id="btnPlus" class="btn btn-primary">+</button><p></p></div>
+      </div>
+    </div>
+    </div>
+    <botoneraloca id="botoneraloca" class="d-flex justify-content-between">
+      <div id="btnReset" class="p-2 bd-highlight"><button class="btn btn-danger">Reset</button></div>
+      <div class="ms-auto p-2 bd-highlight"><button id="btnSave" class="btn btn-success">Guardar</button></div>
+      <div class="ms-auto p-2 bd-highlight">
+        <button id="btnPreview" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalone">
+          Total
+        </button>
+      </div>
+    </botoneraloca>
+  </page>
+  <!-- Modal -->
+  <div class="modal fade" id="modalone" tabindex="-1" aria-labelledby="modalLabelone" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content prTable">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabelone"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body prTable">
+          <table id="prTable" class="table table-striped border-dark table-sm">
+            <thead>
+              <tr>
+                <th>Cantidad total:</th>
+                <th>B2C</th>
+                <th>B2B</th>
+              </tr>
+            </thead>
+            <tbody id="totaldoc"></tbody>
+          </table>
+        </div>
+        <div id="esconder" class="modal-footer no-print">
+          <button type="button" class="ahre btn btn-secondary no-print" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-primary no-print" onclick="print()">
+            Imprimir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="text-center">
+          <P></P>
+          <p>DOWNLOADING UPGRADE</p>
+          <p>ALERTA - ESTA ACCION PUEDE REINICIAR LOS DATOS A 0</p>
+        </div>
+        <div id="esconder" class="modal-footer no-print">
+          <button type="button" class="ahre btn btn-secondary no-print" data-bs-dismiss="modal">
+            Cancelar
+          </button>
+          <a href="download/html.zip"><button type="button" class="btn btn-danger no-print">
+            Aceptar
+          </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal2 -->
+  <!-- notificaciones -->
+  <div id="liveToast" class="notification toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" style="z-index: 11">
+    <div class="d-flex">
+      <div id="toastMessage" class="toast-body">
+        this will be replaced.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
