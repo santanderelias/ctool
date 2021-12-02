@@ -4,29 +4,6 @@
 const cacheName = 'ctool-v1';
 
 const appShellFiles = [ 
-  'favicon.png',
-  'index.html',
-  'js',
-  'js/var.js',
-  'js/events.js',
-  'js/engine.js',
-  'js/func.js',
-  'js/bootstrap.bundle.js',
-  'js/bootstrap.bundle.js.map',
-  'ctool.webmanifest',
-  'img',
-  'img/bg.png',
-  'fonts',
-  'fonts/graduate.eot',
-  'fonts/graduate.ttf',
-  'fonts/graduate.woff',
-  'sw.js',
-  'app.js',
-  'icons',
-  'css',
-  'css/bootstrap.css.map',
-  'css/bootstrap.css',
-  'css/main.css',
 ];
 
 /*
