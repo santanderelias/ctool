@@ -29,6 +29,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js');
 }
 
+/*
 // Requesting permission for Notifications after clicking on the button
 const button = document.getElementById('notifications');
 button.addEventListener('click', () => {
@@ -38,6 +39,7 @@ button.addEventListener('click', () => {
     }
   });
 });
+*/
 
 
 
