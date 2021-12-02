@@ -30,7 +30,7 @@ for (let i = 0; i < games.length; i++) {
   gamesImages.push(`data/img/${games[i].slug}.jpg`);
 }
 const contentToCache = appShellFiles.concat(gamesImages);
-
+*/
 // Installing Service Worker
 self.addEventListener('install', (e) => {
   console.log('[Service Worker] Install');
@@ -40,7 +40,7 @@ self.addEventListener('install', (e) => {
     await cache.addAll(contentToCache);
   })());
 });
-*/
+
 // Fetching content using Service Worker
 self.addEventListener('fetch', (e) => {
   e.respondWith((async () => {
