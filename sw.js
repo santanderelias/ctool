@@ -1,4 +1,4 @@
-self.importScripts('data/games.js');
+//self.importScripts('data/games.js');
 
 // Files to cache
 const cacheName = 'ctool-v1';
