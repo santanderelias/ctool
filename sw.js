@@ -4,7 +4,6 @@
 const cacheName = 'ctool-v1';
 
 const appShellFiles = [ 
-  'ctool',
   'favicon.png',
   'index.html',
   'js',
