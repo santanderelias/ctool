@@ -2,35 +2,44 @@
 
 // Files to cache
 const cacheName = 'ctool-v1';
-/*
-const appShellFiles = [
-  '/pwa-examples/js13kpwa/',
-  '/pwa-examples/js13kpwa/index.html',
-  '/pwa-examples/js13kpwa/app.js',
-  '/pwa-examples/js13kpwa/style.css',
-  '/pwa-examples/js13kpwa/fonts/graduate.eot',
-  '/pwa-examples/js13kpwa/fonts/graduate.ttf',
-  '/pwa-examples/js13kpwa/fonts/graduate.woff',
-  '/pwa-examples/js13kpwa/favicon.ico',
-  '/pwa-examples/js13kpwa/img/js13kgames.png',
-  '/pwa-examples/js13kpwa/img/bg.png',
-  '/pwa-examples/js13kpwa/icons/icon-32.png',
-  '/pwa-examples/js13kpwa/icons/icon-64.png',
-  '/pwa-examples/js13kpwa/icons/icon-96.png',
-  '/pwa-examples/js13kpwa/icons/icon-128.png',
-  '/pwa-examples/js13kpwa/icons/icon-168.png',
-  '/pwa-examples/js13kpwa/icons/icon-192.png',
-  '/pwa-examples/js13kpwa/icons/icon-256.png',
-  '/pwa-examples/js13kpwa/icons/icon-512.png',
+
+const appShellFiles = [ 
+  'ctool',
+  'favicon.png',
+  'index.html',
+  'js',
+  'js/var.js',
+  'js/events.js',
+  'js/engine.js',
+  'js/func.js',
+  'js/bootstrap.bundle.js',
+  'js/bootstrap.bundle.js.map',
+  'ctool.webmanifest',
+  'img',
+  'img/bg.png',
+  'fonts',
+  'fonts/graduate.eot',
+  'fonts/graduate.ttf',
+  'fonts/graduate.woff',
+  'sw.js',
+  'app.js',
+  'icons',
+  'css',
+  'css/bootstrap.css.map',
+  'css/bootstrap.css',
+  'css/main.css',
 ];
-*/
+
 /*
 const gamesImages = [];
 for (let i = 0; i < games.length; i++) {
   gamesImages.push(`data/img/${games[i].slug}.jpg`);
 }
-const contentToCache = appShellFiles.concat(gamesImages);
 */
+const contentToCache = appShellFiles;
+
+
+
 // Installing Service Worker
 self.addEventListener('install', (e) => {
   console.log('[Service Worker] Install');
