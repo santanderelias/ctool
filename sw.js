@@ -2,6 +2,7 @@ self.importScripts('data/games.js');
 
 // Files to cache
 const cacheName = 'ctool-v1';
+/*
 const appShellFiles = [
   '/pwa-examples/js13kpwa/',
   '/pwa-examples/js13kpwa/index.html',
@@ -22,6 +23,8 @@ const appShellFiles = [
   '/pwa-examples/js13kpwa/icons/icon-256.png',
   '/pwa-examples/js13kpwa/icons/icon-512.png',
 ];
+*/
+/*
 const gamesImages = [];
 for (let i = 0; i < games.length; i++) {
   gamesImages.push(`data/img/${games[i].slug}.jpg`);
@@ -37,7 +40,7 @@ self.addEventListener('install', (e) => {
     await cache.addAll(contentToCache);
   })());
 });
-
+*/
 // Fetching content using Service Worker
 self.addEventListener('fetch', (e) => {
   e.respondWith((async () => {
