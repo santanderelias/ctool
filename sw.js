@@ -1,13 +1,32 @@
 //self.importScripts('data/games.js');
 
 // Files to cache
-const cacheName = 'ctool-v1';
+const cacheName = 'ctool-v2';
 
 const appShellFiles = [ 
   'index.html',
   'ctool.webmanifest',
   'sw.js',
   'app.js',
+  'favicon.png',
+  'README.md',
+  'js/var.js',
+  'js/func.js',
+  'js/events.js',
+  'js/engine.js',
+  'js/bootstrap.bundle.js',
+  'js/bootstrap.bundle.js.map',
+  'icons/icon-32.png',
+  'icons/icon-64.png',
+  'icons/icon-96.png',
+  'icons/icon-128.png',
+  'icons/icon-168.png',
+  'icons/icon-192.png',
+  'icons/icon-256.png',
+  'icons/icon-512.png',
+  'css/bootstrap.css',
+  'css/bootstrap.css.map',
+  'css/main.css',
 ];
 
 /*
