@@ -20,7 +20,7 @@ const appShellFiles = [
   'icons/icon-64.png',
   'icons/icon-96.png',
   'icons/icon-128.png',
-  'icons/icon-168-1.png',
+  'icons/icon-168.png',
   'icons/icon-192.png',
   'icons/icon-256.png',
   'icons/icon-512.png',
