@@ -5,6 +5,9 @@ function dPrint(){
   print()
 }
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
 //populate printdoc
 //guardarTEMP
 /*

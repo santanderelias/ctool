@@ -1,7 +1,7 @@
 {
     "name": "Ctool App",
     "short_name": "ctool",
-    "description": "Progressive Web App that lets you count things.",
+    "description": "Count things",
     "icons": [
         {
             "src": "icons/icon-32.png",
@@ -47,5 +47,5 @@
     "start_url": "./index.html",
     "display": "Standalone",
     "theme_color": "#FFF",
-    "background_color": "#B12A34"
+    "background_color": "#000"
 }

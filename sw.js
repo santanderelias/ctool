@@ -1,7 +1,7 @@
 //self.importScripts('data/games.js');
 
 // Files to cache
-const cacheName = 'ctool-v2.0003';
+const cacheName = 'ctool-v2.0004';
 
 const appShellFiles = [ 
   'index.html',
@@ -29,12 +29,7 @@ const appShellFiles = [
   'css/main.css',
 ];
 
-/*
-const gamesImages = [];
-for (let i = 0; i < games.length; i++) {
-  gamesImages.push(`data/img/${games[i].slug}.jpg`);
-}
-*/
+
 const contentToCache = appShellFiles;
 
 

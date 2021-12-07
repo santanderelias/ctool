@@ -76,11 +76,6 @@ function saveDb() {
     dbTemp[i].cantidadb2b = 0
     db[i].cantidadb2c += dbTemp[i].cantidadb2c
     dbTemp[i].cantidadb2c = 0
-
-    /* if (dbTemp[i] = db[i]){
-       db[i].
-       console.log(db[i].id)
-     }*/
   }
   console.log(db)
   dnote.innerHTML = "";
