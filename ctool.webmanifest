@@ -1,7 +1,7 @@
 {
     "name": "Ctool App",
     "short_name": "ctool",
-    "description": "Count things",
+    "description": "Count things v1",
     "icons": [
         {
             "src": "icons/icon-32.png",
