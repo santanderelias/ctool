@@ -7,7 +7,6 @@ const appShellFiles = [
   'index.html',
   'ctool.webmanifest',
   'sw.js',
-  'app.js',
   'favicon.ico',
   'js/var.js',
   'js/func.js',
