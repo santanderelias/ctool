@@ -61,20 +61,20 @@ bloque {
 
 .notification {
   position: fixed !important;
-  bottom: 20px !important;
+  top: 20px !important;
   right: 20px !important;
 }
 
 .notificationAlert {
   background-color: red !important;
   position: fixed !important;
-  bottom: 20px !important;
+  top: 20px !important;
   right: 20px !important;
 }
 
 .notificationSuccess {
   background-color: green !important;
   position: fixed !important;
-  bottom: 20px !important;
+  top: 20px !important;
   right: 20px !important;
 }
