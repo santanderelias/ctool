@@ -53,12 +53,12 @@ function createRemito(pan) {
   dfooter.innerHTML = total
   console.log(`pan total: ${total}`)
   console.log(pan)
+  console.log(`Added Item ${pan.name}, ${pan.cantidad} Kg`)
+  toastMessage.innerText = `Added Item ${pan.name}, ${pan.cantidad} Kg`;
   inputSele.value = "";
   inputCant.value = "";
   pan.id = "";
   pan.cantidad = 0;
-  console.log('Added!')
-  toastMessage.innerText = "Item Añadido"
   if (liveToast.classList.contains("notificationSuccess")) {
     changeClasses(liveToast, "notificationSuccess", "notification");
   }
