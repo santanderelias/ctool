@@ -53,7 +53,7 @@ function createRemito(pan) {
   dfooter.innerHTML = total
   console.log(`pan total: ${total}`)
   console.log(pan)
-  console.log(`Added: \nItem ${pan.name}, \ncantidad ${pan.cantidad} Kg`)
+  console.log(`Added: \n${pan.name}, \ncantidad ${pan.cantidad} Kg`)
   toastMessage.innerText = `Added: \n Item ${pan.name} \n cantidad ${pan.cantidad} Kg`;
   inputSele.value = "";
   inputCant.value = "";
