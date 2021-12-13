@@ -214,17 +214,18 @@ function keyShortcuts(e) {
   else if (e.code == "F4") {
     console.log(` ${e.code}`, "Downloading package");
     modal2.toggle()
-  } else if (e.code == "Period") {
+  }
+  /* else if (e.code == "Period") {
     console.log(` ${e.code}`, "Period pressed, changing packaging");
     if (radiocheck.checked = true) {
       radiocheck.removeAttribute("checked")
       radiocheck2.setAttribute("checked", "")
-      }
+      } 
     else {
       radiocheck2.removeAttribute("checked")
       radiocheck.setAttribute("checked", "")
       }
-  }
+  } */
   else { console.log(` ${e.code}`); }
 }
 
