@@ -79,10 +79,9 @@ function saveDb() {
   }
   console.log(db)
   //historylogger
-  var dnoteLastElem = dnote.lastChild;
   // Copy the <li> element and its child nodes
-  var historySharer = dnoteLastElem.cloneNode(true);
-  historyback.appendChild(cln);
+  var historySharer = dnote.cloneNode(true);
+  historyback.appendChild(historySharer);
   //end history logger
   dnote.innerHTML = "";
   inputSele.value = "";
