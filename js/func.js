@@ -80,7 +80,7 @@ function saveDb() {
   console.log(db)
   //historylogger
   var historySharer = dnote.cloneNode(true);
-  historyback.appendChild(historySharer);
+  historyback.after(historySharer);
   //end history logger
   dnote.innerHTML = "";
   inputSele.value = "";
