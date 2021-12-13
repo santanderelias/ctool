@@ -78,8 +78,7 @@ function saveDb() {
     dbTemp[i].cantidadb2c = 0
   }
   console.log(db)
-  historybackText = dnote.cloneNode(true);
-  historyback.innerHTML = historybackText;
+  historyback.innerHTML = dnote.cloneNode(true);
   dnote.innerHTML = "";
   inputSele.value = "";
   inputCant.value = "";
