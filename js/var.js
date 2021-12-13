@@ -7,6 +7,7 @@ const btnReset = document.getElementById("btnReset");
 const inputSele = document.getElementById("pansele");
 const inputCant = document.getElementById("cantidad");
 const dnote = document.getElementById("dnote");
+const historyback = document.getElementById("historyback");
 const dfooter = document.getElementById("dfooter");
 const totaldoc = document.getElementById("totaldoc");
 const modalTitle = document.getElementById("modalLabelone");
