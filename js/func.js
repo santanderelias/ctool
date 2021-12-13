@@ -106,6 +106,8 @@ function resetDnote() {
   toast.show();
   changeAfterOnesSec(liveToast, "notificationAlert", "notification", 5500)
   inputCant.focus();
+  total = 0;
+  dfooter.innerHTML = ''
 }
 
 function toDoc() {
