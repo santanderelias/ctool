@@ -79,7 +79,7 @@ function saveDb() {
   }
   console.log(db)
   //historylogger
-  var historySharer = dnote.cloneNode(true);
+  var historySharer = document.getElementById('noteToCopy').cloneNode(true);
   historyback.after(historySharer);
   //end history logger
   dnote.innerHTML = "";
@@ -87,7 +87,7 @@ function saveDb() {
   inputCant.value = "";
   console.log('Saved!');
   total = 0;
-dfooter.innerHTML = ''
+  dfooter.innerHTML = ''
   toastMessage.innerText = "Remito agregado al total";
   changeClasses(liveToast, "notification", "notificationSuccess");
   toast.show();
