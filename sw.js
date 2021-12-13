@@ -1,7 +1,7 @@
 //self.importScripts('data/games.js');
 
 // Files to cache
-const cacheName = 'ctool-v2.0009';
+const cacheName = 'ctool-v2.00010';
 
 const appShellFiles = [ 
   'index.html',
