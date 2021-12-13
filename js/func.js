@@ -79,7 +79,6 @@ function saveDb() {
   }
   console.log(db)
   //historylogger
-  // Copy the <li> element and its child nodes
   var historySharer = dnote.cloneNode(true);
   historyback.appendChild(historySharer);
   //end history logger
