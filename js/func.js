@@ -78,7 +78,7 @@ function saveDb() {
     dbTemp[i].cantidadb2c = 0
   }
   console.log(db)
-  historybackText = dnote.innerText
+  historybackText = dnote.innerHTML;
   historyback.innerHTML = historybackText;
   dnote.innerHTML = "";
   inputSele.value = "";
