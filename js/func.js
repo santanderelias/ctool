@@ -81,6 +81,7 @@ function saveDb() {
   //historylogger
   var historySharer = document.getElementById('noteToCopy').cloneNode(true);
   historyback.after(historySharer);
+  historyback.after("<hr>")
   //end history logger
   dnote.innerHTML = "";
   inputSele.value = "";
