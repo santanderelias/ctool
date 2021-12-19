@@ -1,22 +1,23 @@
 lstorage = window.localStorage;
 
-if(!localStorage.getItem('db')) {
+if(!lStorage.getItem('db')) {
     populateStorage();
   } else {
     setVars();
   }
 
 function populateStorage() {
-   localStorage.setItem('db', 'db');
-   localStorage.setItem('dbTemp', 'dbTemp');
-   localStorage.setItem('historyback', historyback);
-   setVars();
+    lStorage.setItem('db', JSON.stringify(db)); //stringify object and store
+    lStorage.setItem('dbTemp', JSON.stringify(dbTemp)); //stringify object and store
+    lStorage.setItem('historyback', JSON.stringify(historyback)); //stringify object and store
+    setVars();
 }
   
 function setVars() {  
-    db = localStorage.getItem('db', db);
-    db = localStorage.getItem('db', dbTemp);
-    db = localStorage.getItem('db', historyback);
+
+    db = JSON.parse(lStorage.getItem('db')); //retrieve the object
+    dbTemp = JSON.parse(lStorage.getItem('dbTemp')); //retrieve the object
+    historyback = JSON.parse(lStorage.getItem('historyback')); //retrieve the object
   }
 
 db.onchange = populateStorage;

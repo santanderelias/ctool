@@ -1,5 +1,6 @@
 
 //inputfields, buttons n table
+const obj = {name: 'elias', age: '29', nac: 'AR'}
 const btnPlus = document.getElementById("btnPlus");
 const btnSave = document.getElementById("btnSave");
 const btnPreview = document.getElementById("btnPreview");
