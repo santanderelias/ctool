@@ -17,7 +17,7 @@
 #d-note {
   border: solid black 2px;
   margin: 1em;
-  max-width: 700px;
+  width: 100%;
 }
 bloque {
     animation-iteration-count: infinite;

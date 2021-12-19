@@ -77,9 +77,11 @@ function saveDb() {
     db[i].cantidadb2c += dbTemp[i].cantidadb2c
     dbTemp[i].cantidadb2c = 0
   }
-  console.log(db)
+  //console.log(db)
+  historyState += 1
   //historylogger
   var historySharer = document.getElementById('noteToCopy').cloneNode(true);
+  historyback.after(historyState);
   historyback.after(historySharer);
   //end history logger
   dnote.innerHTML = "";

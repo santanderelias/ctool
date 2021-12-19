@@ -20,6 +20,7 @@ const mes = 12; //dat.getUTCMonth();
 const toastTrigger = document.getElementById('liveToastBtn');
 const toastLive = document.getElementById('liveToast')
 const toast = new bootstrap.Toast(toastLive)
+historyState = 0
 const modal2 = new bootstrap.Modal(document.getElementById('modal2'), {
   keyboard: false
 })
