@@ -1,4 +1,4 @@
-lstorage = window.localStorage;
+lStorage = window.localStorage;
 
 if(!lStorage.getItem('db')) {
     populateStorage();
