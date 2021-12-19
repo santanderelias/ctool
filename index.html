@@ -73,12 +73,15 @@
       </div>
 
     </div>
-    <div id="selector">
-      <tfooter>
-        <tr class="row-cols-2">
-          <th class="col"><input id="cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="cantidad"
-              required /></th>
-          <th class="col"><select list="pansel" name="pansele" id="pansele" type="text" class="form-control"
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <input id="cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="cantidad"
+              required />
+        </div>
+        <div class="col">
+          <select list="pansel" name="pansele" id="pansele" type="text" class="form-control"
               placeholder="variedad" aria-label="pansele" />
             <datalist id="pansel">
               <option value="" style="display:none" selected></option>
@@ -104,12 +107,12 @@
               <option value="pandulce">Pan Dulce</option>
             </datalist>
             </select>
-          </th>
-        </tr>
-      </tfooter>
-      <div class="row"><button id="btnPlus" class="btn btn-primary">+</button>
+        </div>
+        <div class="col-6">
+          <button id="btnPlus" class="btn btn-primary">+</button>
+        </div>
+      </div>
     </div>
-  </div>
     <botoneraloca id="botoneraloca" class="d-flex justify-content-between">
       <div id="btnReset" class="p-2 bd-highlight"><button class="btn btn-danger">Reset</button></div>
       <div class="ms-auto p-2 bd-highlight"><button id="btnSave" class="btn btn-success">Guardar</button></div>
