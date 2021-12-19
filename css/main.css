@@ -84,3 +84,7 @@ bloque {
   top: 20px;
   right: 20px;
 }
+
+selector {
+  border: solid black 2px;
+}
