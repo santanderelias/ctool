@@ -71,7 +71,7 @@ function createRemito(pan) {
 };
 
 function saveDb() {
-  for (var i = 0; i < 19; i++) {
+  for (var i = 0; i < 20; i++) {
     db[i].cantidadb2b += dbTemp[i].cantidadb2b
     dbTemp[i].cantidadb2b = 0
     db[i].cantidadb2c += dbTemp[i].cantidadb2c
@@ -97,7 +97,7 @@ function saveDb() {
 }
 
 function resetDnote() {
-  for (var i = 0; i < 19; i++) {
+  for (var i = 0; i < 20; i++) {
     dbTemp[i].cantidadb2b = 0
     dbTemp[i].cantidadb2c = 0
   }
@@ -117,7 +117,7 @@ function resetDnote() {
 
 function toDoc() {
   totaldoc.innerHTML = '<tbody id="totaldoc"></tbody>'
-  for (var i = 0; i < 19; i++) {
+  for (var i = 0; i < 20; i++) {
     var pan = totaldoc.insertRow(-1);
     var name = pan.insertCell(0);
     var b2c = pan.insertCell(1);

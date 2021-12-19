@@ -153,10 +153,10 @@ var db = [
   },
   {
     id: "pandulce",
-    name: "Pan D",
+    name: "Pan Dulce",
     cantidadb2b: 0,
     cantidadb2c: 0,
-  },
+  }
 ];
 
 //tempdb
@@ -276,6 +276,12 @@ var dbTemp = [
     cantidadb2b: 0,
     cantidadb2c: 0,
   },
+  {
+    id: "pandulce",
+    name: "Pan Dulce",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  }
 ];
 
 const udb = {
