@@ -1,4 +1,4 @@
-console.log('>> events.js loaded')
+
 //shortcut keys
 document.addEventListener('keydown', keyShortcuts);
 //events btns 

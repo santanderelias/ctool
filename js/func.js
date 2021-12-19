@@ -1,4 +1,4 @@
-console.log('>> func.js loaded')
+
 function createRemito(pan) {
   pan.name = inputSele.options[inputSele.selectedIndex].text;
   pan.id = document.getElementById("pansele").value;

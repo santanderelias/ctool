@@ -12,6 +12,7 @@ const appShellFiles = [
   'js/func.js',
   'js/events.js',
   'js/engine.js',
+  'js/localstorage.js',
   'icons/icon-32.png',
   'icons/icon-64.png',
   'icons/icon-96.png',

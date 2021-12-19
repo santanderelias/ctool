@@ -1,4 +1,4 @@
-console.log(">> var.js loaded");
+
 //inputfields, buttons n table
 const btnPlus = document.getElementById("btnPlus");
 const btnSave = document.getElementById("btnSave");
@@ -15,7 +15,7 @@ const radiocheck = document.getElementById("flexRadioDefault1");
 const radiocheck2 = document.getElementById("flexRadioDefault2");
 const dat = new Date();
 const dia = dat.getUTCDate() + 1;
-const mes = dat.getUTCMonth();
+const mes = 12; //dat.getUTCMonth();
 const toastTrigger = document.getElementById('liveToastBtn');
 const toastLive = document.getElementById('liveToast')
 const toast = new bootstrap.Toast(toastLive)
@@ -147,6 +147,12 @@ const db = [
   {
     id: "rugbrod800",
     name: "Rugbrod 800g",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "pandulce",
+    name: "Pan D",
     cantidadb2b: 0,
     cantidadb2c: 0,
   },

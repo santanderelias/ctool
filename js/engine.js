@@ -1,4 +1,4 @@
-console.log('>> engine.js loaded')
+
 modalTitle.innerHTML = `Fecha: ${dia}/${mes}`;
 
 function dPrint(){
