@@ -13,7 +13,7 @@ function createRemito(pan) {
     inputCant.focus();
     inputCant.classList.add('is-invalid')
     return
-  } else if (pan.id == "") {
+  } else if (pan.id == "" || pan.id == "Variedad") {
     console.log("ingresa la variedad")
     toastMessage.innerText = "Ingresa la variedad";
     changeClasses(liveToast, "notification", "notificationAlert");

@@ -14,17 +14,13 @@
   margin-right: 0;
   margin-left: 0;
 }
+
 #d-note {
   border: solid black 2px;
   margin: 1em;
   width: 100%;
 }
-bloque {
-    animation-iteration-count: infinite;
-}
-.columna {
-  width: 50%
-}
+
 
 #myInput {
   /*background-image: url('/css/searchicon.png'); /* Add a search icon to input */ 
@@ -62,29 +58,29 @@ bloque {
 .notification {
   position: fixed !important;
   top: 20px !important;
-  left: 20px !important;
+  right: 20px !important;
 }
 
 .notificationAlert {
   background-color: red !important;
   position: fixed !important;
   top: 20px !important;
-  left: 20px !important;
+  right: 20px !important;
 }
 
 .notificationSuccess {
   background-color: green !important;
   position: fixed !important;
   top: 20px !important;
-  left: 20px !important;
+  right: 20px !important;
 }
 
-#butonneer {
+#selector {
+  border: solid #212529 2px;
+  border-radius: 6px 6px 0px 0px;
   position: fixed;
-  top: 20px;
-  right: 20px;
-}
-
-selector {
-  border: solid black 2px;
+  bottom: 0px;
+  width: 100%;
+  padding:0%;
+  margin: 0%;
 }
