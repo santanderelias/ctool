@@ -77,12 +77,12 @@
     </div>
     <div id="selector" class="bg-dark border-dark">
       <div class="row d-flex justify-content-center ">
-        <div class="col">
-          <input id="cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="cantidad"
+        <div class="col d-flex justify-content-center">
+          <input id="cantidad" type="number" class="form-control col-9" placeholder="Cantidad" aria-label="cantidad"
             required />
         </div>
         <div class="col">
-          <select list="pansel" name="pansele" id="pansele" type="text" class="form-control" placeholder="variedad"
+          <select list="pansel" name="pansele" id="pansele" type="text" class="form-control col-9" placeholder="variedad"
             aria-label="pansele" />
           <datalist id="pansel">
             <option value="Variedad" style="display:none" selected>Variedad</option>
@@ -110,15 +110,15 @@
           </select>
         </div>
         <div class="col">
-          <div><button id="btnPlus" class="btn btn-info">Agregar</button></div>
+          <div><button id="btnPlus" class="btn btn-info col-9">Agregar</button></div>
         </div>
       </div>
       <div class="row d-flex justify-content-center margentop">
-        <div class="col d-flex justify-content-center"><button id="btnSave" class="btn btn-success">Guardar</button></div>
-        <div class="col d-flex justify-content-center"><button id="btnReset" class="btn btn-danger">Reset</button></div>
-        <div class="col d-flex justify-content-center"><button class="btn btn-warning" data-bs-toggle="modal"
+        <div class="col d-flex justify-content-center"><button id="btnSave" class="btn btn-success col-9">Guardar</button></div>
+        <div class="col d-flex justify-content-center"><button id="btnReset" class="btn btn-danger col-9">Reset</button></div>
+        <div class="col d-flex justify-content-center"><button class="btn btn-warning col-9" data-bs-toggle="modal"
             data-bs-target="#modalthree">Historial</button></div>
-        <div class="col d-flex justify-content-center"><button id="btnPreview" class="btn btn-primary" data-bs-toggle="modal"
+        <div class="col d-flex justify-content-center"><button id="btnPreview" class="btn btn-primary  col-9" data-bs-toggle="modal"
             data-bs-target="#modalone">Total</button></div>
       </div>
     </div>
