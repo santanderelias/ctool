@@ -19,12 +19,8 @@
   margin: 1em;
   max-width: 700px;
 }
-bloque {
-    animation-iteration-count: infinite;
-}
-.columna {
-  width: 50%
-}
+bloque { animation-iteration-count: infinite; }
+.columna { width: 50% }
 
 #myInput {
   /*background-image: url('/css/searchicon.png'); /* Add a search icon to input */ 
