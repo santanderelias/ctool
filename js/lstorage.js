@@ -13,10 +13,9 @@ function populateStorage() {
 }
   
 function setVars() {  
-
     db = JSON.parse(lStorage.getItem('db')); //retrieve the object
     dbTemp = JSON.parse(lStorage.getItem('dbTemp')); //retrieve the object
   }
 
-db.onchange = populateStorage;
-dbTemp.onchange = populateStorage;
+db.onchange = populateStorage();
+dbTemp.onchange = populateStorage();
