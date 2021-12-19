@@ -80,7 +80,6 @@ function saveDb() {
   console.log(db)
   //historylogger
   var historySharer = document.getElementById('noteToCopy').cloneNode(true);
-  historySharer.removeChild(historySharer.lastChild);
   historyback.after(historySharer);
   //end history logger
   dnote.innerHTML = "";
