@@ -212,7 +212,7 @@ function keyShortcuts(e) {
     console.log(`Presed ${e.code}`);
   }
   else if (e.code == "F4") {
-    console.log(` ${e.code}`, "Downloading package");
+    console.log(` ${e.code}`, "opening modal");
     modal2.toggle()
   }
   /* else if (e.code == "Period") {
