@@ -79,6 +79,7 @@ function saveDb() {
   }
   //console.log(db)
   historyState += 1
+  historyDiv = 'Remito número ' + historyState + '.'
   //historylogger
   var historySharer = document.getElementById('noteToCopy').cloneNode(true);
   historyback.after(historyState);
