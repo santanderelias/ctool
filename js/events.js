@@ -9,5 +9,6 @@ btnSave.addEventListener("click", saveDb);
 //event add to table
 btnPlus.addEventListener("click", createRemito);
 btnPreview.addEventListener("click", toDoc);
-console.log('v0.99')
-
+btnPlus.addEventListener("focus", highlight)
+btnPreview.addEventListener("focus", highlight)
+btnSave.addEventListener("focus", highlight)
