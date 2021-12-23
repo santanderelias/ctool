@@ -244,7 +244,7 @@ function changeAfterOnesSec(a, b, c, d) {
 }
 
 function highlight(a){
-  alert(`btn ${a} focused`)
+  console.log(`btn ${a} focused`)
 }
 
 console.log('hi')
