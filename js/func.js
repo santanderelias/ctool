@@ -244,7 +244,6 @@ function changeAfterOnesSec(a, b, c, d) {
 }
 
 function highlight(a){
-  console.log(`btn ${a} focused`)
+  this.appendChild("<-");
 }
 
-console.log('hi')
