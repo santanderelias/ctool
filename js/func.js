@@ -243,7 +243,4 @@ function changeAfterOnesSec(a, b, c, d) {
   });
 }
 
-function highlight(a){
-  this.appendChild("<-");
-}
 

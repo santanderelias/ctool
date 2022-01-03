@@ -154,7 +154,7 @@ var db = [
   },
   {
     id: "pandulce",
-    name: "Pan Dulce",
+    name: "Pan de navidad",
     cantidadb2b: 0,
     cantidadb2c: 0,
   }
@@ -279,7 +279,7 @@ var dbTemp = [
   },
   {
     id: "pandulce",
-    name: "Pan Dulce",
+    name: "Pan de navidad",
     cantidadb2b: 0,
     cantidadb2c: 0,
   }
