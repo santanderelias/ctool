@@ -8,6 +8,11 @@ function dPrint(){
 //if ('serviceWorker' in navigator) {
 //  navigator.serviceWorker.register('./sw.js');
 //}
+
+console.log('service worker deactivated');
+
+
+
 //populate printdoc
 //guardarTEMP
 /*
