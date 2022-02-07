@@ -82,9 +82,8 @@ function saveDb() {
   historyDiv = 'Remito número ' + historyState + '.'
   //historylogger
   var historySharer = document.getElementById('noteToCopy').cloneNode(true);
-  historyback.after(`Remito N° ${historyState}`);
+  historyback.after(historyDiv);
   historyback.after(historySharer);
-  //add last item to lstorage
   //end history logger
   dnote.innerHTML = "";
   inputSele.value = "";
