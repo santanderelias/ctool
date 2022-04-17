@@ -120,11 +120,11 @@ function resetDnote() {
 function toDoc() {
   totaldoc.innerHTML = '<tbody id="totaldoc"></tbody>'
   for (var i = 0; i < 29; i++) {
-    if (db[i].cantidadb2c && db[i].cantidadb2b === 0) { break; }
     var pan = totaldoc.insertRow(-1);
     var name = pan.insertCell(0);
     var b2c = pan.insertCell(1);
     var b2b = pan.insertCell(2);
+    if (b2c && b2b === 0) { continue; }
     name.innerHTML = db[i].name;
     b2c.innerHTML = db[i].cantidadb2c;
     b2b.innerHTML = db[i].cantidadb2b;
