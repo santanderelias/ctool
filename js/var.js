@@ -157,6 +157,54 @@ var db = [
     name: "Pan de navidad",
     cantidadb2b: 0,
     cantidadb2c: 0,
+  },
+  {
+    id: "papa125",
+    name: "Papa 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "rustico125",
+    name: "Rustico 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "semillas125",
+    name: "Semillas 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "mediterraneo125",
+    name: "Mediterraneo 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "multi125",
+    name: "Multicereal 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "bunpapaharina",
+    name: "Bun papa Harina",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "muesliMolde1kg",
+    name: "Muesli Molde 1kg",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "maizMolde1kg",
+    name: "Maiz Molde 1kg",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
   }
 ];
 
@@ -280,6 +328,54 @@ var dbTemp = [
   {
     id: "pandulce",
     name: "Pan de navidad",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "papa125",
+    name: "Papa 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "rustico125",
+    name: "Rustico 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "semillas125",
+    name: "Semillas 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "mediterraneo125",
+    name: "Mediterraneo 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "multi125",
+    name: "Multicereal 125",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "bunpapaharina",
+    name: "Bun papa Harina",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "muesliMolde1kg",
+    name: "Muesli Molde 1kg",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "maizMolde1kg",
+    name: "Maiz Molde 1kg",
     cantidadb2b: 0,
     cantidadb2c: 0,
   }
