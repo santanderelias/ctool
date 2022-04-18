@@ -1500,5 +1500,4 @@ if (!Date.now) {
     };
   }
   ());
-  document.querySelector('.mobileConsole_base').style.display = "none";
   
