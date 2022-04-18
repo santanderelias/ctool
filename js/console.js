@@ -365,8 +365,7 @@ if (!Date.now) {
         margin: 0,
         border: '0 none',
         borderTop: '1px solid #808080',
-        backgroundColor: '#ffffff',
-        display: 'none'
+        backgroundColor: '#ffffff'
       }),
       topbar : createElem('div', 'topbar', {
         boxSizing: 'border-box',
