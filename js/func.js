@@ -211,6 +211,7 @@ function sortTable(n) {
 
 function keyShortcuts(e) {
   if (e.ctrlKey && e.code == "KeyL") {
+    e.preventDefault()
     saveDb();
     console.log(`Presed ${e.code}`);
   }
@@ -219,6 +220,7 @@ function keyShortcuts(e) {
     modal2.toggle()
   }
   if (e.code == "F12") {
+    e.preventDefault()
     if (document.querySelector('.mobileConsole_base').style.display != "none") {
       document.querySelector('.mobileConsole_base').style.display = "none";
     }
