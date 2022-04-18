@@ -214,9 +214,16 @@ function keyShortcuts(e) {
     saveDb();
     console.log(`Presed ${e.code}`);
   }
-  else if (e.code == "F4") {
+  if (e.code == "F4") {
     console.log(` ${e.code}`, "opening modal");
     modal2.toggle()
+  }
+  if (k.code == "F12") {
+    if (document.querySelector('.mobileConsole_base').style.display != "none") {
+      document.querySelector('.mobileConsole_base').style.display = "none";
+    }
+    else { 
+      document.querySelector('.mobileConsole_base').style.display = "block"; }
   }
   /* else if (e.code == "Period") {
     console.log(` ${e.code}`, "Period pressed, changing packaging");

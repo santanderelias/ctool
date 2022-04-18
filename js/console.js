@@ -1498,5 +1498,7 @@ if (!Date.now) {
       status : status,
       options : options
     };
-  }());
+    document.querySelector('.mobileConsole_base').style.display = "none";
+  }
+  ());
   
