@@ -253,4 +253,4 @@ function changeAfterOnesSec(a, b, c, d) {
   });
 }
 
-
+document.querySelector('.mobileConsole_base').style.display = "none";
