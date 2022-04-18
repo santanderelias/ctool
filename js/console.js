@@ -1498,6 +1498,5 @@ if (!Date.now) {
       status : status,
       options : options
     };
-  }
-  ());
+  }());
   
