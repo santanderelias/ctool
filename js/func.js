@@ -218,7 +218,7 @@ function keyShortcuts(e) {
     console.log(` ${e.code}`, "opening modal");
     modal2.toggle()
   }
-  if (k.code == "F12") {
+  if (e.code == "F12") {
     if (document.querySelector('.mobileConsole_base').style.display != "none") {
       document.querySelector('.mobileConsole_base').style.display = "none";
     }
