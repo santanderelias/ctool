@@ -210,7 +210,7 @@ function sortTable(n) {
 }
 
 function keyShortcuts(e) {
-  if (e.code == "KeyL") {
+  if (e.ctrlKey && e.code == "KeyL") {
     saveDb();
     console.log(`Presed ${e.code}`);
   }
