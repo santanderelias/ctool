@@ -152,12 +152,12 @@ var db = [
     cantidadb2b: 0,
     cantidadb2c: 0,
   },
-  {
+  /* {
     id: "pandulce",
     name: "Pan de navidad",
     cantidadb2b: 0,
     cantidadb2c: 0,
-  },
+  }, */
   {
     id: "papa125",
     name: "Papa 125g",
@@ -331,12 +331,12 @@ var dbTemp = [
     cantidadb2b: 0,
     cantidadb2c: 0,
   },
-  {
+  /* {
     id: "pandulce",
     name: "Pan de navidad",
     cantidadb2b: 0,
     cantidadb2c: 0,
-  },
+  }, */
   {
     id: "papa125",
     name: "Papa 125",
