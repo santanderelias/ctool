@@ -125,7 +125,7 @@ function toDoc() {
     var b2c = pan.insertCell(1);
     var b2b = pan.insertCell(2);
     console.log('loop numero ' + i)
-    if (b2c && b2b == 0) { 
+    if (db[i].cantidadb2c && db[i].cantidadb2b === 0) { 
       console.log(`${db[i].name} tiene ${db[i].cantidadb2c} b2c & ${db[i].cantidadb2b} b2b`)
       continue; 
     }
