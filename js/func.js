@@ -120,9 +120,9 @@ function resetDnote() {
 function toDoc() {
   totaldoc.innerHTML = '<tbody id="totaldoc"></tbody>'
   for (var i = 0; i < 28; i++) {
-    if (db[i].cantidadb2c && db[i].cantidadb2b !== 0) { 
+    if (db[i].cantidadb2c && db[i].cantidadb2b == 0) { 
     console.log(`${db[i].name} tiene ${db[i].cantidadb2c} b2c & ${db[i].cantidadb2b} b2b, not printing ${db[i].name}`)
-    break; 
+    continue; 
     }
     var pan = totaldoc.insertRow(-1);
     var name = pan.insertCell(0);
