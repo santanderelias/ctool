@@ -24,7 +24,7 @@
 </script>
 -->
 
-<body>
+<body onload="hideConsole()">
   <!-- app -->
   <page id="wraper" class="no-print ">
     <div id="foo" class="d-flex justify-content-center">
@@ -245,7 +245,7 @@
 		})
     </script>
         <script>
-          function script() {
+          function hideConsole() {
               document.querySelector('.mobileConsole_base').style.display = "none";
           }
           </script>
