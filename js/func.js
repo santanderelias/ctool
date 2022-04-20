@@ -127,7 +127,7 @@ function toDoc() {
     console.log('loop numero ' + i)
     if (db[i].cantidadb2c && db[i].cantidadb2b === 0) { 
       console.log(`${db[i].name} tiene ${db[i].cantidadb2c} b2c & ${db[i].cantidadb2b} b2b`)
-      continue; 
+      break; 
     }
     name.innerHTML = db[i].name;
     b2c.innerHTML = db[i].cantidadb2c;
