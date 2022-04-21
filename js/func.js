@@ -5,7 +5,7 @@ function createRemito(pan) {
   pan.cantidad = Number(inputCant.value);
   console.log(`pan cantidad:${pan.cantidad}`)
   if (pan.cantidad == 0) {
-    console.log("ingresa la variedad")
+    console.log("ingresa la cantidad")
     toastMessage.innerText = "Ingresa la cantidad";
     changeClasses(liveToast, "notification", "notificationAlert");
     toast.show();
