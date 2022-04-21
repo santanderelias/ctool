@@ -259,3 +259,5 @@ async function ver() {
     toastMessage.innerText = "Ayuda: F4";
     toast.show();
 }
+
+setTimeout(ver(), 3000);
