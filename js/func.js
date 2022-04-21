@@ -5,7 +5,6 @@ function createRemito(pan) {
   pan.cantidad = Number(inputCant.value);
   console.log(`pan cantidad:${pan.cantidad}`)
   if (pan.cantidad == 0) {
-    console.log("ingresa la cantidad")
     toastMessage.innerText = "Ingresa la cantidad";
     changeClasses(liveToast, "notification", "notificationAlert");
     toast.show();
@@ -14,7 +13,6 @@ function createRemito(pan) {
     inputCant.classList.add('is-invalid')
     return
   } else if (pan.id == "" || pan.id == "Variedad") {
-    console.log("ingresa la variedad")
     toastMessage.innerText = "Ingresa la variedad";
     changeClasses(liveToast, "notification", "notificationAlert");
     toast.show();
@@ -34,7 +32,6 @@ function createRemito(pan) {
   //sort pending!!!!
   //change pan.cantidad to pan.cantidadb2c or b2b
   if (radiocheck.checked) {
-    console.log(`Item ${pan.name} B2C added`)
     dbTemp.find((obj) => {
       if (obj.id === pan.id) {
         obj.cantidadb2c += pan.cantidad
@@ -42,7 +39,6 @@ function createRemito(pan) {
       }
     })
   } else {
-    console.log(`Item ${pan.name} B2B added`)
     dbTemp.find((obj) => {
       if (obj.id === pan.id) {
         obj.cantidadb2b += pan.cantidad
@@ -51,9 +47,6 @@ function createRemito(pan) {
     })
   }
   dfooter.innerHTML = total
-  console.log(`pan total: ${total}`)
-  console.log(pan)
-  console.log(`Added: \n${pan.name}, \ncantidad ${pan.cantidad} Kg`)
   toastMessage.innerText = `Added: \n Item ${pan.name} \n cantidad ${pan.cantidad} Kg`;
   inputSele.value = "";
   inputCant.value = "";
@@ -77,10 +70,8 @@ function saveDb() {
     db[i].cantidadb2c += dbTemp[i].cantidadb2c
     dbTemp[i].cantidadb2c = 0
   }
-  //console.log(db)
   historyState += 1
   historyDiv = 'Remito número ' + historyState + '.'
-  //historylogger
   var historySharer = document.getElementById('noteToCopy').cloneNode(true);
   historyback.after(historyDiv);
   historyback.after(historySharer);
@@ -88,7 +79,6 @@ function saveDb() {
   dnote.innerHTML = "";
   inputSele.value = "";
   inputCant.value = "";
-  console.log('Saved!');
   total = 0;
   dfooter.innerHTML = ''
   toastMessage.innerText = "Remito agregado al total";
@@ -106,10 +96,8 @@ function resetDnote() {
   dnote.innerHTML = "";
   inputSele.value = "";
   inputCant.value = "";
-  console.log('Reseted!');
   toastMessage.innerText = "Items eliminados del remito";
   changeClasses(liveToast, "notification", "notificationAlert");
-  console.log("cambiado a alert")
   toast.show();
   changeAfterOnesSec(liveToast, "notificationAlert", "notification", 5500)
   inputCant.focus();
@@ -213,17 +201,27 @@ function sortTable(n) {
 }
 
 function keyShortcuts(e) {
-  if (e.ctrlKey && e.code == "KeyL") {
-    e.preventDefault()
+  if (e.ctrlKey && e.code == "KeyG") {
+    e.preventDefault();
     saveDb();
+    console.log(`Presed ${e.code}`);
+  }
+  if (e.ctrlKey && e.code == "KeyA") {
+    e.preventDefault();
+    createRemito();
+    console.log(`Presed ${e.code}`);
+  }
+  if (e.ctrlKey && e.code == "KeyI") {
+    e.preventDefault();
+    print();
     console.log(`Presed ${e.code}`);
   }
   if (e.code == "F4") {
     console.log(` ${e.code}`, "opening modal");
-    modal2.toggle()
+    modal2.toggle();
   }
   if (e.code == "F12") {
-    e.preventDefault()
+    e.preventDefault();
     if (document.querySelector('.mobileConsole_base').style.display != "none") {
       document.querySelector('.mobileConsole_base').style.display = "none";
     }

@@ -153,15 +153,6 @@
             <tbody id="totaldoc"></tbody>
           </table>
         </div>
-        <div id="esconder" class="modal-footer no-print">
-          <button type="button" class="ahre btn btn-secondary no-print" data-bs-dismiss="modal"
-            onclick="inputCant.focus()">
-            Cerrar
-          </button>
-          <button type="button" class="btn btn-primary no-print" onclick="document.title = 'conteo';window.print();">
-            Imprimir
-          </button>
-        </div>
       </div>
     </div>
   </div>
@@ -171,18 +162,20 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="text-center">
-          <P></P>
-          <p>Titulo</p>
-          <p>Modal texto</p>
-          <p>podes volver a este mensaje con la tecla F4</p>
+          <h1>Ayuda</h1>
+          <h3>Atajos del teclado:</h3>
+          <p>'Ctrl + I' Imprimir</p>
+          <p>'Ctrl + G' Guardar remito a la lista total</p>
+          <p>'Ctrl + A' Agregar item a la lista</p>
+          <p>Abrir este menu F4</p>
         </div>
         <div id="esconder" class="modal-footer no-print">
           <button type="button" class="ahre btn btn-secondary no-print" data-bs-dismiss="modal"
-            onclick="lStorage.clear()">
+            onclick="lStorage.clear(); reload()">
             Clear lStorage
           </button>
           <a href=""><button type="button" data-bs-dismiss="modal" class="btn btn-danger no-print">
-              Cancelar
+              Cerrar
             </button></a>
         </div>
       </div>
