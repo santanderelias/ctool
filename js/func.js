@@ -253,3 +253,9 @@ function changeAfterOnesSec(a, b, c, d) {
     }, d);
   });
 }
+
+async function ver() {
+    console.log('ctool version 1.0');
+    toastMessage.innerText = "Ayuda: F4";
+    toast.show();
+}
