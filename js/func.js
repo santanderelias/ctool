@@ -208,7 +208,7 @@ function keyShortcuts(e) {
   }
   if (e.ctrlKey && e.code == "KeyA") {
     e.preventDefault();
-    createRemito();
+    createRemito(pan);
     console.log(`Presed ${e.code}`);
   }
   if (e.ctrlKey && e.code == "KeyI") {
