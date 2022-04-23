@@ -228,8 +228,7 @@ function keyShortcuts(e) {
     else { 
       document.querySelector('.mobileConsole_base').style.display = "block"; }
   }
-  /* else if (e.code == "Period") {
-    console.log(` ${e.code}`, "Period pressed, changing packaging");
+  else if (e.ctrlKey && e.code == "KeyE") {
     if (radiocheck.checked = true) {
       radiocheck.removeAttribute("checked")
       radiocheck2.setAttribute("checked", "")
@@ -238,7 +237,7 @@ function keyShortcuts(e) {
       radiocheck2.removeAttribute("checked")
       radiocheck.setAttribute("checked", "")
       }
-  } */
+  } 
   else { console.log(` ${e.code}`); }
 }
 
