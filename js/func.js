@@ -27,15 +27,30 @@ function createRemito(pan) {
   /* var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1); */
   
-  var celda = document.createElement("tr");
-  console.log(`celda: \n ${celda}`)
+  /*var celda = document.createElement("tr"); */
+  var col = document.createElement("tr");
+  var celuno = document.createElement("td");
+  var celdos = document.createElement("td");
+
+  celuno.innerHTML = pan.cantidad
+  celdos.innerHTML = pan.name
+
+  col.appendChild(celuno)
+  col.appendChild(celdos)
+  dnote.appendChild(col)
+  console.log(celuno)
+  console.log(celdos)
+  console.log(col)
+  console.log(dnote)
+
+/*  console.log(`celda: \n ${celda}`)
   var textoceldacant = document.createTextNode(`${pan.cantidad}`);
   var textoceldaname = document.createTextNode(`${pan.name}`);
   var celdappend = document.createTextNode(`<td>${textoceldacant}</td><td>${textoceldaname}</td>`);
   console.log(`textocelda: \n ${textoceldacant} \n ${textoceldaname} \n ${celdappend}`)
   celda.appendChild(celdappend);
   console.log(celda)
-  dnote.appendChild(celda);
+  dnote.appendChild(celda); */
 
 /*
   cell1.innerHTML = pan.cantidad;
