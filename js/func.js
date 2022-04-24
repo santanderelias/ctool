@@ -27,8 +27,15 @@ function createRemito(pan) {
   var row = dnote.insertRow(-1);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
+  
+  var celda = document.createElement("td");
+  var textocelda = document.createTextNode(pan.cantidad);
+  celda.appendChild(textocelda);
+  dnote.appendChild(celda);
+/*
   cell1.innerHTML = pan.cantidad;
-  cell2.innerHTML = pan.name;
+   cell1.innerHTML = `append<elemento>${pan.cantidad}</elemento>` ; 
+  cell2.innerHTML = pan.name; */
   //sort pending!!!!
   //change pan.cantidad to pan.cantidadb2c or b2b
   if (radiocheck.checked) {
