@@ -29,7 +29,7 @@ function createRemito(pan) {
   var cell2 = row.insertCell(1);
   
   var celda = document.createElement("td");
-  var textocelda = document.createTextNode(pan.cantidad);
+  var textocelda = document.createTextNode(`woa ${pan.cantidad}`);
   celda.appendChild(textocelda);
   dnote.appendChild(celda);
   console.log(textocelda)
