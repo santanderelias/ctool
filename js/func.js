@@ -29,11 +29,12 @@ function createRemito(pan) {
   var cell2 = row.insertCell(1); */
   
   var celda = document.createElement("td");
+  console.log(`celda: \n ${celda}`)
   var textocelda = document.createTextNode(`woa ${pan.cantidad}`);
+  console.log(`textocelda: \n ${textocelda}`)
   celda.appendChild(textocelda);
   dnote.appendChild(celda);
-  console.log(textocelda)
-  console.log(celda)
+
 /*
   cell1.innerHTML = pan.cantidad;
    cell1.innerHTML = `append<elemento>${pan.cantidad}</elemento>` ; 
