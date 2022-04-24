@@ -3,7 +3,6 @@ function createRemito(pan) {
   pan.name = inputSele.options[inputSele.selectedIndex].text;
   pan.id = document.getElementById("pansele").value;
   pan.cantidad = Number(inputCant.value);
-  console.log(`pan cantidad:${pan.cantidad}`)
   if (pan.cantidad == 0) {
     toastMessage.innerText = "Ingresa la cantidad";
     changeClasses(liveToast, "notification", "notificationAlert");
@@ -30,9 +29,12 @@ function createRemito(pan) {
   
   var celda = document.createElement("td");
   console.log(`celda: \n ${celda}`)
-  var textocelda = document.createTextNode(`woa ${pan.cantidad}`);
-  console.log(`textocelda: \n ${textocelda}`)
-  celda.appendChild(textocelda);
+  var textoceldacant = document.createTextNode(`woa ${pan.cantidad}`);
+  var textoceldaname = document.createTextNode(`woa ${pan.name}`);
+  console.log(`textocelda: \n ${textoceldacant} \n ${textoceldaname}`)
+  celda.appendChild(textoceldacant);
+  celda.appendChild(textoceldaname);
+  console.log(celda)
   dnote.appendChild(celda);
 
 /*
