@@ -27,13 +27,12 @@ function createRemito(pan) {
   /* var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1); */
   
-  var celda = document.createElement("td");
+  var celda = document.createElement("tr");
   console.log(`celda: \n ${celda}`)
   var textoceldacant = document.createTextNode(`${pan.cantidad}`);
   var textoceldaname = document.createTextNode(`${pan.name}`);
   console.log(`textocelda: \n ${textoceldacant} \n ${textoceldaname}`)
-  celda.appendChild(textoceldacant);
-  celda.appendChild(textoceldaname);
+  celda.appendChild(`<td>${textoceldacant}</td><td>${textoceldaname}</td>`);
   console.log(celda)
   dnote.appendChild(celda);
 
