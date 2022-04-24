@@ -32,6 +32,8 @@ function createRemito(pan) {
   var textocelda = document.createTextNode(pan.cantidad);
   celda.appendChild(textocelda);
   dnote.appendChild(celda);
+  console.log(textocelda)
+  console.log(celda)
 /*
   cell1.innerHTML = pan.cantidad;
    cell1.innerHTML = `append<elemento>${pan.cantidad}</elemento>` ; 
