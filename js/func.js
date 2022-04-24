@@ -213,20 +213,16 @@ function keyShortcuts(e) {
   if (e.ctrlKey && e.code == "KeyG") {
     e.preventDefault();
     saveDb();
-    console.log(`Presed ${e.code}`);
   }
   if (e.ctrlKey && e.code == "KeyA") {
     e.preventDefault();
     createRemito(pan);
-    console.log(`Presed ${e.code}`);
   }
   if (e.ctrlKey && e.code == "KeyI") {
     e.preventDefault();
     print();
-    console.log(`Presed ${e.code}`);
   }
   if (e.code == "F4") {
-    console.log(` ${e.code}`, "opening modal");
     modal2.toggle();
   }
   if (e.code == "F12") {
@@ -247,7 +243,7 @@ function keyShortcuts(e) {
       radiocheck.setAttribute("checked", "")
       }
   } 
-  else { console.log(` ${e.code}`); }
+ /* else { console.log(` ${e.code}`); } */
 }
 
 function changeClasses(a, b, c) {
