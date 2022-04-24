@@ -25,8 +25,8 @@ function createRemito(pan) {
     inputCant.classList.remove('is-invalid')
   }
   var row = dnote.insertRow(-1);
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
+  /* var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1); */
   
   var celda = document.createElement("td");
   var textocelda = document.createTextNode(`woa ${pan.cantidad}`);
