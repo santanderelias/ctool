@@ -31,7 +31,7 @@ function createRemito(pan) {
   console.log(`celda: \n ${celda}`)
   var textoceldacant = document.createTextNode(`${pan.cantidad}`);
   var textoceldaname = document.createTextNode(`${pan.name}`);
-  var celdappend = `<td>${textoceldacant}</td><td>${textoceldaname}</td>`
+  var celdappend = document.createTextNode(`<td>${textoceldacant}</td><td>${textoceldaname}</td>`);
   console.log(`textocelda: \n ${textoceldacant} \n ${textoceldaname} \n ${celdappend}`)
   celda.appendChild(celdappend);
   console.log(celda)
