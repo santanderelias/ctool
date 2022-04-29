@@ -252,6 +252,7 @@ function keyShortcuts(e) {
       document.querySelector('.mobileConsole_base').style.display = "block"; }
   }
   else if (e.ctrlKey && e.code == "KeyE") {
+    e.preventDefault();
     if (radiocheck.checked = true) {
       radiocheck.removeAttribute("checked")
       radiocheck2.setAttribute("checked", "")
