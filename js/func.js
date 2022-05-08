@@ -154,6 +154,12 @@ function toDoc() {
     b2b.innerHTML = db[i].cantidadb2b;
     total.b2c += db[i].cantidadb2c;
     total.b2b += db[i].cantidadb2b
+    if (db[i].cantidadb2c == "-") {
+      db[i].cantidadb2c = 0
+    }
+    if (db[i].cantidadb2b == "-") {
+      db[i].cantidadb2b = 0
+    }
   }
 }
 
