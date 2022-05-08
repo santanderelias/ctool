@@ -144,6 +144,12 @@ function toDoc() {
     var b2c = pan.insertCell(1);
     var b2b = pan.insertCell(2);
     name.innerHTML = db[i].name;
+    if (db[i].cantidadb2c == 0) {
+      db[i].cantidadb2c = "-"
+    }
+    if (db[i].cantidadb2b == 0) {
+      db[i].cantidadb2b = "-"
+    }
     b2c.innerHTML = db[i].cantidadb2c;
     b2b.innerHTML = db[i].cantidadb2b;
     total.b2c += db[i].cantidadb2c;
