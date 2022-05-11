@@ -24,40 +24,14 @@ function createRemito(pan) {
     inputCant.classList.remove('is-invalid')
   }
   var row = dnote.insertRow(-1);
-  /* var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1); */
-  
-  /*var celda = document.createElement("tr"); */
   var col = document.createElement("tr");
   var celuno = document.createElement("td");
   var celdos = document.createElement("td");
-
   celuno.innerHTML = pan.cantidad
   celdos.innerHTML = pan.name
-
   col.appendChild(celuno)
   col.appendChild(celdos)
   dnote.appendChild(col)
-  console.log(celuno)
-  console.log(celdos)
-  console.log(col)
-  console.log(dnote)
-
-/*  console.log(`celda: \n ${celda}`)
-  var textoceldacant = document.createTextNode(`${pan.cantidad}`);
-  var textoceldaname = document.createTextNode(`${pan.name}`);
-  var celdappend = document.createTextNode(`<td>${textoceldacant}</td><td>${textoceldaname}</td>`);
-  console.log(`textocelda: \n ${textoceldacant} \n ${textoceldaname} \n ${celdappend}`)
-  celda.appendChild(celdappend);
-  console.log(celda)
-  dnote.appendChild(celda); */
-
-/*
-  cell1.innerHTML = pan.cantidad;
-   cell1.innerHTML = `append<elemento>${pan.cantidad}</elemento>` ; 
-  cell2.innerHTML = pan.name; */
-  //sort pending!!!!
-  //change pan.cantidad to pan.cantidadb2c or b2b
   if (radiocheck.checked) {
     dbTemp.find((obj) => {
       if (obj.id === pan.id) {
@@ -89,7 +63,6 @@ function createRemito(pan) {
   toast.show()
   inputCant.focus();
 };
-
 function saveDb() {
   for (var i = 0; i < 28; i++) {
     db[i].cantidadb2b += dbTemp[i].cantidadb2b
@@ -114,7 +87,6 @@ function saveDb() {
   changeAfterOnesSec(liveToast, "notificationSuccess", "notification", 5500)
   inputCant.focus();
 }
-
 function resetDnote() {
   for (var i = 0; i < 28; i++) {
     dbTemp[i].cantidadb2b = 0
@@ -131,7 +103,6 @@ function resetDnote() {
   total = 0;
   dfooter.innerHTML = ''
 }
-
 function toDoc() {
   totaldoc.innerHTML = '<tbody id="totaldoc"></tbody>'
   for (var i = 0; i < 28; i++) {
@@ -162,8 +133,6 @@ function toDoc() {
     }
   }
 }
-
-
 function myFunction() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
@@ -183,7 +152,6 @@ function myFunction() {
     }
   }
 }
-
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("dnote");
@@ -238,7 +206,6 @@ function sortTable(n) {
     }
   }
 }
-
 function keyShortcuts(e) {
   if (e.ctrlKey && e.code == "KeyG") {
     e.preventDefault();
@@ -274,13 +241,10 @@ function keyShortcuts(e) {
       radiocheck.setAttribute("checked", "")
       }
   } 
- /* else { console.log(` ${e.code}`); } */
 }
-
 function changeClasses(a, b, c) {
   a.classList.replace(b, c);
 }
-
 function changeAfterOnesSec(a, b, c, d) {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -288,11 +252,9 @@ function changeAfterOnesSec(a, b, c, d) {
     }, d);
   });
 }
-
 async function ver() {
     console.log('ctool version 1.0');
     toastMessage.innerText = "Ayuda: F4";
     toast.show();
 }
-
 setTimeout(ver(), 3000);
