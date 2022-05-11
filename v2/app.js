@@ -19,3 +19,4 @@ function keyShortcuts(e) {
     }
   }
 document.addEventListener('keydown', keyShortcuts);
+alert(`Alerta`)
