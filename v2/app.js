@@ -1,4 +1,4 @@
-document.getElementById("app").innerHTML = 'it works';
+document.getElementById('app').innerHTML = 'it works';
 // regexp
 let text = "some random text to start ";
 let pattern = /palabra/i;
