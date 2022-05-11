@@ -1,3 +1,4 @@
+alert('alert')
 // regexp
 let text = "some random text to start ";
 let pattern = /palabra/i;
