@@ -1,4 +1,4 @@
-alert('alert')
+document.getElementsByName("body").innerHTML = 'it works';
 // regexp
 let text = "some random text to start ";
 let pattern = /palabra/i;
@@ -20,4 +20,3 @@ function keyShortcuts(e) {
     }
   }
 document.addEventListener('keydown', keyShortcuts);
-alert(`Alerta`)
