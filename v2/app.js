@@ -18,5 +18,7 @@ function keyShortcuts(e) {
       else { 
         document.querySelector('.mobileConsole_base').style.display = "block"; }
     }
+    else { 
+      console.log(e) }
   }
 document.addEventListener('keydown', keyShortcuts);
