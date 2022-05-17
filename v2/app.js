@@ -13,13 +13,12 @@ function keyShortcuts(e) {
     }
     if (e.code == "F12") {
       e.preventDefault();
-      if (document.querySelector('.mobileConsole_base').style.display != "none") {
+    if (document.querySelector('.mobileConsole_base').style.display != "none") {
         document.querySelector('.mobileConsole_base').style.display = "none";
       }
-      else { 
+    else { 
         document.querySelector('.mobileConsole_base').style.display = "block"; }
     }
-    else { 
-      console.log(e) }
+    console.log(e) 
   }
 document.addEventListener('keydown', keyShortcuts);
