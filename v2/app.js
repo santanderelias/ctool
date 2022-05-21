@@ -5,7 +5,7 @@ let text = "some random text to start ";
 let pattern = /palabra/i;
 let result = text.match(pattern);
 console.log(result)
-document.getElementById("writableDiv").innerHTML = result;
+document.getElementById("writableDiv").innerHTML = "result";
 //shortcut keys
 function keyShortcuts(e) {
     if (e.ctrlKey && e.code == "KeyG") {
