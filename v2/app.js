@@ -9,7 +9,7 @@ document.getElementById('writableDiv').innerHTML = `encontre: ${result}`;
 function keyShortcuts(e) {
     if (e.ctrlKey && e.code == "KeyG") {
       e.preventDefault();
-      console.log(`ctrl +${e}`);
+      console.log(`ctrl + ${e.code}`);
     }
     if (e.code == "F12") {
       e.preventDefault();
@@ -19,6 +19,6 @@ function keyShortcuts(e) {
     else { 
         document.querySelector('.mobileConsole_base').style.display = "block"; }
     }
-    console.log(e) 
+    console.log(e.code) 
   }
 document.addEventListener('keydown', keyShortcuts);
