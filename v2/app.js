@@ -1,10 +1,9 @@
-document.getElementById('app').innerHTML = 'it works';
-console.log('console')
+console.log('console');
 // regexp
 let text = "some random text to start ";
 let pattern = /random/i;
 let result = text.match(pattern);
-console.log(result)
+console.log(result);
 document.getElementById("writableDiv").innerHTML = "result";
 //shortcut keys
 function keyShortcuts(e) {
@@ -20,6 +19,6 @@ function keyShortcuts(e) {
     else { 
         document.querySelector('.mobileConsole_base').style.display = "block"; }
     }
-    console.log(e) 
+    console.log(e)
   }
 document.addEventListener('keydown', keyShortcuts);
