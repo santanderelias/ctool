@@ -1,7 +1,7 @@
 console.log('console')
 // regexp
 let text = "some random text to start ";
-let pattern = /random/i;
+let pattern = /text/i;
 let result = text.match(pattern);
 console.log(result)
 document.getElementById('writableDiv').innerHTML = `encontre: ${result}`;
