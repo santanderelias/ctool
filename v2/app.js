@@ -2,7 +2,7 @@ document.getElementById('app').innerHTML = 'it works';
 console.log('console')
 // regexp
 let text = "some random text to start ";
-let pattern = /palabra/i;
+let pattern = /random/i;
 let result = text.match(pattern);
 console.log(result)
 document.getElementById("writableDiv").innerHTML = "result";
