@@ -13,6 +13,11 @@
   <link href="../css/bootstrap.css" rel="stylesheet" />
   <link href="../css/main.css" rel="stylesheet" />
   <link href="./app.css" rel="stylesheet" />
+  <script>
+    function hideConsole() {
+        document.querySelector('.mobileConsole_base').style.display = "none";
+    } 
+    </script>
 </head>
 <body onload="hideConsole()">
 <div id="app">
@@ -40,11 +45,6 @@
           return new bootstrap.Popover(popoverTriggerEl)
       })
   </script>
-      <script>
-        async function hideConsole() {
-            document.querySelector('.mobileConsole_base').style.display = "none";
-        } 
-        </script>
 </body>
 
 </html>
