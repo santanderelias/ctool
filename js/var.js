@@ -207,6 +207,24 @@ var db = [
     cantidadb2c: 0,
   },
   {
+    id: "lactalMolde",
+    name: "Lactal Molde 500gr",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "quesoBun",
+    name: "Queso Bun 100gr",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "jalaTrenza",
+    name: "Jala Trenza Dulce",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
     id: "maizMolde1kg",
     name: "Maiz Molde 1kg",
     cantidadb2b: 0,
@@ -382,6 +400,24 @@ var dbTemp = [
   {
     id: "muesliMolde1kg",
     name: "Muesli Molde 1kg",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+    {
+    id: "lactalMolde",
+    name: "Lactal Molde 500gr",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "quesoBun",
+    name: "Queso Bun 100gr",
+    cantidadb2b: 0,
+    cantidadb2c: 0,
+  },
+  {
+    id: "jalaTrenza",
+    name: "Jala Trenza Dulce",
     cantidadb2b: 0,
     cantidadb2c: 0,
   },
