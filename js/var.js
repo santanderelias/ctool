@@ -429,8 +429,3 @@ var dbTemp = [
   }
 ];
 
-const udb = {
-  biomarket: {name: 'Biomarket', et: 'no', prefs: {mediterraneo500: 1, rustico500: 1, semillasMolde1kg: 3}},
-  kelpMarket: {name: 'Kelp Market', et: 'si', prefs: {clasico500: 1, maiz: 1, rustico500: 1, semillas500: 2}},
-  harper: {name: 'Harper', et: 'no', prefs: {clasicoMolde1kg: 1, rustico500: 1, semillasMolde1kg: 3}},
-}
