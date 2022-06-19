@@ -1,6 +1,6 @@
 console.log('console')
 // regexp
-let text = "some random text to start ";
+/* let text = "some random text to start ";
 let source = "text to search from";
 let pattern = /text/i;
 let result = text.match(pattern);
@@ -16,8 +16,9 @@ function saveDb() {
     dbTemp[i].cantidadb2c = 0
   }
 
-console.log(result)
-document.getElementById('writableDiv').innerHTML = `encontre: ${result}`;
+console.log(result) 
+document.getElementById('writableDiv').innerHTML = `encontre: ${result}`; */
+console.log("test")
 //shortcut keys
 function keyShortcuts(e) {
     if (e.ctrlKey && e.code == "KeyG") {
@@ -34,5 +35,4 @@ function keyShortcuts(e) {
     }
     console.log(e.code) 
   }
-}
-document.addEventListener('keydown', keyShortcuts());
+document.addEventListener('keydown', keyShortcuts);
