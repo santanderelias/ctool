@@ -16,8 +16,3 @@
 .btn-mas{
     width: 15%;
 }
-td {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
