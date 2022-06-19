@@ -34,3 +34,6 @@ function keyShortcuts(e) {
     console.log(e.code) 
   }
 document.addEventListener('keydown', keyShortcuts);
+function openMenu() {
+  
+}
