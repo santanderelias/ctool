@@ -9,6 +9,7 @@
 }
 .inputBoxCant{
     width: 30px;
+    text-align: start;
 }
 .floating-menu {
     font-family: sans-serif;
