@@ -1,4 +1,3 @@
-console.log('console')
 // regexp
 /* let text = "some random text to start ";
 let source = "text to search from";
@@ -18,7 +17,6 @@ function saveDb() {
 
 console.log(result) 
 document.getElementById('writableDiv').innerHTML = `encontre: ${result}`; */
-console.log("test")
 //shortcut keys
 function keyShortcuts(e) {
     if (e.ctrlKey && e.code == "KeyG") {
