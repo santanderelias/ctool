@@ -35,5 +35,5 @@ function keyShortcuts(e) {
   }
 document.addEventListener('keydown', keyShortcuts);
 function openMenu() {
-  
+  console.log("menu clicked")
 }
