@@ -8,5 +8,11 @@
     z-index: 99;
 }
 .inputBoxCant{
-    width: 100%;
+    width: 68%;
+}
+.btn-menos{
+    width: 15%;
+}
+.btn-mas{
+    width: 15%;
 }
